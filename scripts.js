@@ -1,13 +1,14 @@
-window.onscroll = function() { addSticky() };
+const menu_button = document.getElementById("menu_button");
+const menu_overlay = document.getElementById("menu_overlay");
 
-let header = document.getElementsByTagName("header");
+const toggleOverlay = function (){ 
+    if (menu_overlay.classList.contains("show")) {
+        menu_overlay.classList.remove("show");
+        menu_overlay.classList.add("hide");
+    } else { 
+        menu_overlay.classList.remove("hide");
+        menu_overlay.classList.add("show"); }
+};
 
-let sticky = header.offsetTop;
 
-function addSticky() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
-}
+menu_button.addEventListener("click", toggleOverlay);
