@@ -112,6 +112,10 @@ footer {
 
 main {
     height: 100%;
+    padding: .5em;
+}
+
+.service-padding {
     padding: 1.5em 2em;
 }
 
@@ -262,4 +266,22 @@ li:nth-of-type(3) {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.important {
+    color: #04af49;
+}
+
+.hook {
+    display: flex;
+    justify-content: space-between;
+}
+
+.down {
+    height: calc(100vh - 331px);
+    width: 100px;
+}
+
+.homepage {
+    height: calc(100vh  - 164.5px);
 }

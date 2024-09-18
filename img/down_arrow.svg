@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="88mm"
+   height="172mm"
+   viewBox="0 0 88 172"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <pattern
+       xlink:href="#pattern1"
+       preserveAspectRatio="xMidYMid"
+       id="pattern4"
+       patternTransform="matrix(0.26458333,0,0,0.26458333,0.74192259,0.36752838)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="323.81701"
+       height="646.75066"
+       patternTransform="translate(141.02599,339.42182)"
+       preserveAspectRatio="xMidYMid"
+       id="pattern2">
+      <path
+         style="stroke:#000000;stroke-width:0.082"
+         d="M 121.27285,484.7364 0.09899646,485.0298 162.34873,646.69273 323.71827,485.3232 202.83782,485.0298 V 0.041 h -82.15177 z"
+         id="path1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="323.81701"
+       height="646.75066"
+       patternTransform="translate(8.8969622,9.5128774)"
+       preserveAspectRatio="xMidYMid"
+       id="pattern1"
+       style="fill:#000000">
+      <g
+         id="layer1-2"
+         transform="translate(-141.02598,-339.42181)">
+        <rect
+           style="fill:url(#pattern2);stroke:none"
+           width="323.81702"
+           height="646.75067"
+           x="141.02599"
+           y="339.42181"
+           id="rect2" />
+      </g>
+    </pattern>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4">
+      <rect
+         style="fill:#000000;stroke:#000000;stroke-width:0.0216958"
+         id="rect5"
+         width="94.574501"
+         height="171.95363"
+         x="-1.6120653"
+         y="-0.53735501" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5">
+      <rect
+         style="fill:#000000;stroke:#000000;stroke-width:0.0216958"
+         id="rect6"
+         width="94.574501"
+         height="171.95363"
+         x="-1.6120653"
+         y="-0.53735501" />
+    </clipPath>
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:url(#pattern4);stroke:none;stroke-width:0.264583"
+       width="85.676582"
+       height="171.11945"
+       x="0.74192256"
+       y="0.36752835"
+       id="rect1"
+       clip-path="url(#clipPath5)" />
+    <rect
+       style="display:none;fill:#000000;stroke:#000000;stroke-width:0.0216958"
+       id="rect3"
+       width="123.33051"
+       height="202.61441"
+       x="-8.8093214"
+       y="-10.067796"
+       clip-path="url(#clipPath4)" />
+  </g>
+</svg>
