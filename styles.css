@@ -348,3 +348,7 @@ li {
 .button-wrap {
     
 }
+
+.extend-page {
+    height: 100vh;
+}
