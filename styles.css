@@ -272,16 +272,43 @@ li:nth-of-type(3) {
     color: #04af49;
 }
 
-.hook {
+.hook-container {
     display: flex;
     justify-content: space-between;
 }
 
-.down {
-    height: calc(100vh - 331px);
-    width: 100px;
-}
-
 .homepage {
     height: calc(100vh  - 164.5px);
+}
+
+.stem {
+    background-color: black;
+    height: calc(100vh - 380px);
+    width: 40px;
+}
+
+.point {
+    width: 140px;
+}
+
+.arrow {
+    justify-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.cta {
+    margin-bottom: 1em;
+}
+
+.fp-logo {
+    height: 240px;
+}
+
+.hook {
+    display: flex;
+    flex-direction: column;
 }
