@@ -270,6 +270,7 @@ li:nth-of-type(3) {
 
 .important {
     color: #04af49;
+    font-weight: 600;
 }
 
 .hook-container {
