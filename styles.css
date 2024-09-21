@@ -7,27 +7,19 @@
 
 h1 {
     font-size: 1.2em;
-    /*color: #008000;*/
 }
 
 html {
-    background-color: #818181;   
+    background-color: #818181;
 }
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* height: 100vh; */
+    height: 100vh;
     width: 100%;
     background-color: white;
-        /*
-    border: 1px solid black;
-    border-radius: 2px;
-
-    -webkit-box-shadow: 0px 8px 0px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 8px 0px 0px rgba(0,0,0,1);
-    box-shadow: 0px 8px 0px 0px rgba(0,0,0,1); */
 }
 
 header {
@@ -41,20 +33,10 @@ header {
     width: 100%;
     padding: .5em;
     border-bottom: 1px solid black;
-
-    /*
-
-    border: 1px solid black;
-    border-radius: 2px;
-    -webkit-box-shadow: 0px 8px 0px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 8px 0px 0px rgba(0,0,0,1);
-    box-shadow: 0px 8px 0px 0px rgba(0,0,0,1);
-    */
 }
 
 footer {
-    margin-top: 4em;
-    padding: .5em;
+    grid-area: foot;
 }
 
 .contact-buttons {
@@ -78,7 +60,6 @@ footer {
     -webkit-box-shadow: 0px 6px 0px 0px rgba(0,0,0,1);
     -moz-box-shadow: 0px 6px 0px 0px rgba(0,0,0,1);
     box-shadow: 0px 6px 0px 0px rgba(0,0,0,1);
-    /*width: fit-content;*/
     color: #04af49;
     background-color: white;
 }
@@ -113,6 +94,7 @@ footer {
 main {
     height: 100%;
     padding: .5em;
+    overflow: scroll;
 }
 
 .service-padding {
@@ -126,6 +108,9 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+}
+
+.service-headline {
     margin-bottom: .5em;
 }
 
@@ -136,16 +121,6 @@ h4 {
     font-size: 1.2em;
     flex-grow:2;
 }
-/*
-h4::before {
-    display: inline-block;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: #04af49;
-    margin-right: .5em;
-    border-bottom: 4px dotted #04af49;
-} */
 
 h5 {
     font-size: 1em;
@@ -163,9 +138,6 @@ h5 {
 .price-box {
     display: flex;
     justify-content: space-between;
-    
-    /*align-items: center;
-    border-bottom: 2px dashed black;*/
 }
 
 .service-grid {
@@ -192,6 +164,7 @@ h5 {
     margin-bottom: .5em;
 }
 
+
 #menu_overlay {
     z-index: 4;
     position: fixed;
@@ -210,7 +183,7 @@ h5 {
     color: #04af49;
 }
 
-ul {
+.nav-list {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -221,7 +194,7 @@ ul {
     margin-top: 11em;
 }
 
-li {
+.nav-item {
     border: 1px solid black;
     border-radius: 2px;
     padding: .5em;
@@ -270,43 +243,21 @@ li {
     justify-content: space-between;
 }
 
-.homepage {
-    height: calc(100vh  - 164.5px);
-    /*
-    background-image: url("./img/test.jpeg");
-    background-size: cover;
-    background-blend-mode: lighten;
-    overflow: hidden;
-    */
-
-
-    
-}
-/*
-.homepage:before {
-    position: absolute;
-    content: '';
-    background: inherit;
-    height: 370px;
-    width: 650px;
-    left: -25px;
-    right: 0;
-    top: -25px;
-    bottom: 0;
-    box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
-    filter: blur(10px);
-    border-radius: 15px;
-  } */
-
 .stem {
     background-color: black;
-    height: calc(100vh - 380px);
-    width: 40px;
+    height: 86%;
+    width: 20px;
     margin-bottom: -1px;
 }
 
 .point {
-    width: 140px;
+    width: 70px;
+}
+
+.arrow-container {
+    display:flex;
+    height: 100%;
+    width: 100%;
 }
 
 .arrow {
@@ -315,7 +266,9 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+    height: 100%;
+    grid-area: down;
+    margin-left: 3em;
 }
 
 .cta {
@@ -323,32 +276,59 @@ li {
 }
 
 .fp-logo {
-    height: 240px;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 1em;
 }
 
-/*
 .hook {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./img/test.jpeg");
-    background-size: cover;
-    width: 100%;
+    grid-area: hook;
     height: 100%;
+    width: 100%;
 }
-*/
 
-.hook {
+.content-wrap {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     width: 100%;
-    height: 100%
+    justify-content: center;
+
+}
+
+.home-contact {
+    width: fit-content;
+    font-size: .9em;
+}
+
+.tech-help {
+    grid-area: tech;
+}
+
+.contact {
+    grid-area: me;
+}
+
+.business-hours {
+    grid-area: hours;
+    padding: 0 .5em .5em .5em;
+}
+
+.business-hours ul {
+    list-style: none;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content;
+    grid-template-areas: 
+    "tech tech"
+    "me me"
+    "down hook"
+    "foot hours";
+
 }
 
 .button-wrap {
-    
-}
-
-.extend-page {
-    height: 100vh;
+    font-size: .9em;
 }

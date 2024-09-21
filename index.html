@@ -15,47 +15,50 @@
             </div>
             <image id="menu_button" src="img/menu_icon.svg"/>
         </header>
-        <main>
-        <nav id="menu_overlay" class="hide">
-            <ul>
-                <li><a class="menu-item" href="index.html">HOME</a></li>
-                <li><a class="menu-item" href="services.html">SERVICES</a></li>
-                <li><a class="menu-item" href="about.html">ABOUT</a></li>
-                <li><a class="menu-item" href="testimonials.html">TESTIMONIALS</a></li>
-            </ul>
-        </nav>
-        <div class="homepage">
-            <div class="cta">
-                <h2 class="important bolder">NEED TECH HELP?</h2>
-                <h3>CONTACT ME.</h3>
-            </div>
-            <div class="hook-container">
+        <main class="home-grid">
+            <nav id="menu_overlay" class="hide">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="menu-item" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="menu-item" href="services.html">SERVICES</a></li>
+                    <li class="nav-item"><a class="menu-item" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="menu-item" href="testimonials.html">TESTIMONIALS</a></li>
+                </ul>
+            </nav>
+            <!--<div class="cta">-->
+            <h2 class="important bolder tech-help">NEED TECH HELP?</h2>
+            <h3 class="contact">CONTACT ME.</h3>
+            <div class="arrow-container">
                 <div class="arrow">
                     <div class="stem"></div>
                     <img class="point" src="./img/arrow_head.svg"/>
                 </div>
-                <div class="hook">
-                    <p>General IT services in Skagit Valley.</p>
-                    <p>Independently owned and operated.</p>
-                    <p>I have 3 objectives:</p>
-                    <p>Be Responsive</p>
-                    <p>Be Secure</p>
-                    <p>Be Sustainable</p>
+            </div>
+            <div class="hook">
+                <div class="content-wrap">
+                    <img class="fp-logo" src="./img/logo.png" />
                     <div class="button-wrap">
                         <a class="contact-style">VIEW SERVICES</a>
                         <a class="contact-style">LEARN MORE</a>
                     </div>
                 </div>
             </div>
-            </main>
-            <nav class="contact-buttons">
-                <a class="contact-style" href="tel:3606107172">(360) 610-7172</a>
-                <a class="contact-style" href="mailto:phillip@greenbolt.tech">phillip@greenbolt.tech</a>
-            </nav>
-            <footer>
+            <footer id="homepage-footer">
+                <div class="home-contact">
+                    <a class="contact-style" href="tel:3606107172">(360) 610-7172</a>
+                    <a class="contact-style" href="mailto:phillip@greenbolt.tech">phillip@greenbolt.tech</a>
+                </div>
                 <p class="copyright">&copy;2024 GREEN BOLT TECH LLC</p>
             </footer>
-        </div>
+            <div class="business-hours">
+                <p>Business Hours</p>
+                <ul>
+                    <li>mon-fri: 8am - 4pm</li>
+                    <li>sat-sun: closed</li>
+                </ul>
+
+
+            </div>
+        </main>
     </body>
     <script src="scripts.js"></script>
 </html>
