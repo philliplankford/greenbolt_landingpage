@@ -6,14 +6,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body id="body">
         <header>
-            <div class="company">
-                <img id="logo" src="./img/logo.png"/>
-                <h1>GREEN BOLT TECH</h1>
+            <div class="contact-banner">
+                <a href="tel:3606107172">phone: (360) 610-7172</a>
+                <a href="mailto:phillip@greenbolt.tech">email: phillip@greenbolt.tech</a>
             </div>
-            <image id="menu_button" src="img/menu_icon.svg"/>
+            <div class="header-wrap">
+                <div class="company">
+                    <a href="index.html"><img id="logo" src="./img/logo.png"/></a>
+                    <h1>GREEN BOLT TECH</h1>
+                </div>
+                <image id="menu_button" src="img/menu_icon.svg"/>
+            </div>
         </header>
         <main class="service-padding"> 
         <nav id="menu_overlay" class="hide">
@@ -29,7 +38,10 @@
         <ul class="service-grid"></ul>
             <!--<p>All services include sales tax.</p>-->
             <div class="service-block">
-                <h3 class="service-headline">E-Waste Pickup</h3>
+                <div class="service-header">
+                    <h3>E-Waste Pickup</h3>
+                    <img class="service-icon" src="./img/Recycling_symbol.svg" />
+                </div>
                 <p>
                     Do you have computers, broken devices, and other electronics taking up space? 
                     Give me a call and I will come pick it up and ensure it is handled responsibly.
@@ -45,25 +57,35 @@
                 <span class="options"><h5>Over 30Ibs</h5><h4 class="price">+ $1.00/Ib</h4></span>
             </div>
             <div class="service-block">
-                <h3 class="service-headline">Data Destruction</h3>
+                <div class="service-header">
+                    <h3>Data Destruction</h3>
+                    <img class="service-icon" src="./img/hard-disk.svg" />
+                </div>
                 <p>I provide HDD and SSD data destruction on or off-site in accordance with NIST standards. A Certificate of Destruction is issued for your records after destruction is verified. Drive removal is included.</p>
                 <p class="important">Contact me for discounts on 5 or more drives.</p>
                 <span class="options"><h5>Simple Wipe</h5><h4 class="price">$60.00/drive</h4></span>
                 <p>A secure digital destruction method that is adequate for most cases. This process allows drives to be safely reused or sold without fear of others retrieving your sensitive data.</p>
-                <p class="important">$5 off per drive you donate to Green Bolt!</p>
+                <p class="important">$5 off per healthy drive you donate to Green Bolt!</p>
                 <span class="options"><h5>Physical Destruction</h5><h4 class="price">$50.00/drive</h4></span>
                 <p>Hard Drives are taken apart by hand and data sensitive components are crushed beyond recovery or repair. This process allows greener and more efficient material recycling than shredding. </p>
                 <span class="options"><h5>DoD 5220.22-M Wipe</h5><h4 class="price">$120.00/drive</h4></span>
-                <p>I am proud to offer this digital wipe method used by the  United States Department of Defense to my clients. This process allows drives to be safely reused or sold without fear of others retrieving your sensitive data. Only available to HDD's.</p>
-                <p class="important">$5 off per drive you donate to Green Bolt!</p>
+                <p>I am proud to offer this digital wipe method used by the  United States Department of Defense to my clients. This process allows drives to be safely reused or sold without fear of others retrieving your sensitive data. Only usable with HDD's.</p>
+                <p class="important">$5 off per healthy drive you donate to Green Bolt!</p>
             </div>
             <div class="service-block">
-                <h3 class="service-headline">Data Backups & <br/> Data Transfers</h3>
+                <div class="service-header">
+                    <h3>Data Backups & <br/> Data Transfers</h3>
+                    <img class="service-icon" src="./img/backup.svg" />
+                </div>
+                
                 <span class="options"><h5>Backup</h5><h4 class="price">$120</h4></span>
                 <span class="options"><h5>Transfer</h5><h4 class="price">$140</h4></span>
             </div>
             <div class="service-block">
-                <h3 class="service-headline">Virus Removal & <br/> PC Optimization</h3>
+                <div class="service-header">
+                    <h3>Virus Removal & <br/> PC Optimization</h3>
+                    <img class="service-icon" src="./img/virus.svg" />
+                </div>
                 <span class="options"><h5>Virus Removal</h5><h4 class="price">$120</h4></span>
                 <p>If you are experiencing constant pop ups, slow computers, or compromised accounts your computer could be infected by a virus. Don't worry, we can help. You don't need to pay for 
                 security software. I will guide you to a safe and secure computing experience.</p>
@@ -72,20 +94,20 @@
                     and tracking software. This service is personalized as I want to make your computer work for you instead of against you.</p>
             </div>
             <div class="service-block">
-                <h3 class="service-headline">Custom PCs & <br/> PC Repair</h3>
+                <div class="service-header">
+                    <h3>Custom PCs & <br/> PC Repair</h3>
+                    <img class="service-icon" src="./img/pc-tower.svg" />
+                </div>
+                
             </div>
             <div class="service-block">
-                <h3 class="service-headline">Specialized Tech Support</h3>
+                <div class="service-header">
+                    <h3>Specialized Tech Support</h3>
+                    <img class="service-icon" src="./img/wrench.svg" />
+                </div>
             </div>
         </div>
         </main>
-        <nav class="contact-buttons">
-            <a class="contact-style" href="tel:3606107172">(360) 610-7172</a>
-            <a class="contact-style" href="mailto:phillip@greenbolt.tech">phillip@greenbolt.tech</a>
-        </nav>
-        <footer>
-            <p class="copyright">&copy;2024 GREEN BOLT TECH LLC</p>
-        </footer>
     </body>
     <script src="scripts.js"></script>
 </html>
