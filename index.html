@@ -11,11 +11,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body id="body">
-        <header><!--
+        <div class="scroll-text-wrap" style="--marquee-speed: 20s; --direction:scroll-left" role="marquee">
+            <span class="icon-scroll-wrap"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci, vitae excepturi hic omnis similique ducimus, minima dolor et cum enim illum dolorem! Velit, laborum magnam. Quod fuga neque tempora.</p></span>
+            <span class="opposite"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit neque dolorum delectus aliquid fuga quibusdam facilis voluptatum, ipsum itaque non, aliquam eaque ab nobis atque obcaecati eligendi veniam quas rerum?</p></span>
+            <span class="icon-scroll-wrap"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate impedit dolore sed cupiditate aliquam aliquid asperiores fugit doloribus commodi placeat. Ea iure esse iusto pariatur aperiam est vitae molestiae facere.</p></span>
+            <span class="opposite"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse inventore laboriosam doloremque autem. Laudantium beatae nisi dolorum dicta voluptatum, nostrum, exercitationem unde nemo minus explicabo pariatur quisquam voluptates provident.</p></span>
+        </div>
+        <header>
             <div class="contact-banner">
-                <a href="tel:3606107172">phone: (360) 610-7172</a>
-                <a href="mailto:phillip@greenbolt.tech">email: phillip@greenbolt.tech</a>
-            </div> -->
+                <a href="tel:3606107172">call me: (360) 610-7172</a>
+                <!--<a href="mailto:phillip@greenbolt.tech">email: phillip@greenbolt.tech</a>-->
+            </div>
             <div class="header-wrap">
                 <div class="company">
                     <a href="index.html"><img id="logo" src="./img/logo.png"/></a>
@@ -25,36 +31,57 @@
             </div>
         </header>
         <main class="home-page">
-            <h2>RESPONSIVE</h2>
-            <h2>SECURE</h2>
-            <h2>SUSTAINABLE</h2>
-            <div class="home-buttons">
-                <a href="services.html" class="filled-button">View Services</a>
-                <a class="open-button">Learn More</a>
-            </div>
+            <div class="front-wrap">
+                <div class="top-wrap">
+                    <h2>RESPONSIVE</h2>
+                    <h2>SECURE</h2>
+                    <h2>SUSTAINABLE</h2>
+                    <div class="home-buttons">
+                        <a href="services.html" class="filled-button">View Services</a>
+                        <a class="open-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="home-image">
 
+                </div>
+            </div>
+            <div class="form-wrap">
             <form action="https://api.web3forms.com/submit" method="POST">
 
-                <!-- Replace with your Access Key -->
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <div class="entry-wrap">
+                    <h4>How can I help you?</h4>
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                
+                    <!-- Form Inputs. Each input must have a name="" attribute -->
+                    <div class="input-wrap">
+                        <span class="label-wrap"><label>Name:</label><p class="required-text">required</p></span>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="input-wrap">
+                        <span class="label-wrap"><label>Email:</label><p class="required-text">required</p></span>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="input-wrap">
+                        <span class="label-wrap"><label>Phone:</label></span>
+                        <input type="text" name="Phone Number">
+                    </div>
+                    <div class="input-wrap">
+                        <span class="label-wrap"><label>Message:</label><p class="required-text">required</p></span>
+                        <textarea name="message" required></textarea>
+                    </div>
+                
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                    <!-- Custom Confirmation / Success Page -->
+                    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+                </div>
             
-                <!-- Form Inputs. Each input must have a name="" attribute -->
-                <label>Name: (required)</label>
-                <input type="text" name="name" required>
-                <label>Email: (required)</label>
-                <input type="email" name="email" required>
-                <label>Message: (required)</label>
-                <textarea name="message" required></textarea>
-            
-                <!-- Honeypot Spam Protection -->
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-            
-                <!-- Custom Confirmation / Success Page -->
-                <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-            
-                <button type="submit">Submit Form</button>
+                <button type="submit"><img class="button-icon" src="./img/send-email.svg"/></button>
             
             </form>
+            </div>
 
             <nav id="menu_overlay" class="hide">
                 <ul class="nav-list">

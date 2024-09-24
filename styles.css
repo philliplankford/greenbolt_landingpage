@@ -50,12 +50,9 @@ header {
     background-color: white;
 }
 
-body {
-    height: calc(100vh - 67.46px);
-}
-
 main {
     height: 100%;
+
 }
 
 .header-wrap {
@@ -68,7 +65,7 @@ main {
 
 .contact-banner {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #04af49;
     padding: .3em;
 }
@@ -122,7 +119,6 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 1em;
 }
 
 .home-buttons {
@@ -325,3 +321,139 @@ main {
     grid-area: down;
     margin-left: 3em;
 }
+
+.form-wrap {
+    width: 100%;
+    padding: 1em 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 1em;
+    background-color: white;
+
+}
+
+
+
+form button {
+    content: none;
+    outline: none;
+    border: none;
+    background-color:#04af49;
+    padding: 1em;
+    border-radius: 2px;
+}
+
+.button-icon {
+    width: 25px;
+    height: auto;
+}
+
+.entry-wrap {
+    margin-bottom: 1em;
+}
+
+.input-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    padding: 1em;
+    height: 100px;
+    resize: vertical;
+}
+
+.top-wrap {
+    width: 100%;
+}
+
+.front-wrap {
+    display: flex;
+    width: 100%;
+    padding: 10em 1em 1em 1em;
+
+}
+
+
+.e-waste {
+    background-image: url("./img/Recycling_symbol.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgba(255,255,255,0.95);
+    background-blend-mode: lighten;
+    background-position: center;
+}
+
+.data-destruction {
+    background-image: url("./img/hard-disk.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgba(255,255,255,0.9);
+    background-blend-mode: lighten;
+    background-position: center;
+}
+
+.label-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: .2em;
+    margin-top: .8em;
+}
+
+.required-text {
+    font-size: .7em;
+    color: gray;
+    align-self: flex-end;
+}
+
+.scroll-text-wrap {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 86%;
+    justify-content: flex-end;
+
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.icon-scroll-wrap {
+    height: 100%;
+    writing-mode: vertical-lr;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: move 10s infinite linear;
+}
+
+.opposite {
+    height: 100%;
+    writing-mode: vertical-lr;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: move-down 10s infinite linear;
+}
+
+@keyframes move {
+to {
+    transform: translatey(-50%);
+}
+}
+
+@keyframes move-down {
+    to {
+        transform: translatey(50%);
+    }
+    }
+
