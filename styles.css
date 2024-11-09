@@ -209,6 +209,10 @@ main {
     box-shadow: 0px 6px 0px 0px rgba(0,0,0,1);
 }
 
+.service-block h3 {
+    margin-bottom: .5em;
+}
+
 .service-header {
     display: flex;
     width: 100%;
@@ -225,7 +229,7 @@ main {
 .service-block p {
     margin-bottom: .5em;
 }
-
+/*
 .menu-item {
     color: #04af49;
 }
@@ -233,7 +237,7 @@ main {
 .menu-item:visited {
     color: #04af49;
 }
-
+*/
 .nav-list {
     display: flex;
     flex-direction: column;
@@ -242,24 +246,42 @@ main {
     width: 100%;
     height: 100%;
     list-style: none;
-    margin-top: 11em;
+    margin-top: 5em;
 }
 
 .nav-item {
-    border: 1px solid black;
     border-radius: 2px;
-    padding: .5em;
-    width: 50%;
+    padding: 1em;
+    width: 100%;
     text-align: right;
     font-weight: 600;
     font-size: 1em;
-    color: #04af49;
+    color: white;
+    background-color: #04af49;
     margin-bottom: 1em;
+    /*
     -webkit-box-shadow: 0px 6px 0px 0px rgba(0,0,0,1);
     -moz-box-shadow: 0px 6px 0px 0px rgba(0,0,0,1);
     box-shadow: 0px 6px 0px 0px rgba(0,0,0,1);
     background-color: white;
-    margin-right: 7px;
+    margin-right: 7px;*/
+}
+
+.nav-item a {
+    color: white;
+    font-family: "Montserrat";
+    text-decoration: none;
+}
+
+.service-items {
+    list-style: none;
+    text-align: end;
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+.service-items li {
+    padding-bottom: 1em;
 }
 
 .hide {
@@ -375,12 +397,14 @@ textarea {
 
 .top-wrap {
     width: 100%;
+    padding: 10em 1em 1em 1em;
 }
 
 .front-wrap {
     display: flex;
     width: 100%;
-    padding: 10em 1em 1em 1em;
+    height: 100%;
+    position: relative;
 
 }
 
@@ -388,20 +412,22 @@ textarea {
 .e-waste {
     background-image: url("./img/Recycling_symbol.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 40%;
     background-color: rgba(255,255,255,0.95);
     background-blend-mode: lighten;
     background-position: center;
 }
 
+/*
 .data-destruction {
     background-image: url("./img/hard-disk.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 50%;
     background-color: rgba(255,255,255,0.9);
     background-blend-mode: lighten;
     background-position: center;
 }
+    */
 
 .label-wrap {
     display: flex;
@@ -417,43 +443,38 @@ textarea {
     align-self: flex-end;
 }
 
-.scroll-text-wrap {
-    position: absolute;
+.full-menu {
+    display: none;
+}
+
+.bulk-discounts {
+    list-style: none;
+    align-self: center;
+    width: 60%;
+    margin-bottom: 1em;
+}
+
+.bulk-discounts li {
     display: flex;
-    height: 100%;
-    width: 86%;
-    justify-content: flex-end;
-
-
-    overflow: hidden;
-    white-space: nowrap;
+    justify-content: space-between;
+    border-bottom: black 1px dashed;
+    padding-top: 1.5em;
+    font-weight: bold;
 }
 
-.icon-scroll-wrap {
-    height: 100%;
-    writing-mode: vertical-lr;
-    display: flex;
-    flex-wrap: nowrap;
-    animation: move 10s infinite linear;
+.bulk-discounts li span:last-child {
+    font-size: 1.1em;
 }
 
-.opposite {
-    height: 100%;
-    writing-mode: vertical-lr;
-    display: flex;
-    flex-wrap: nowrap;
-    animation: move-down 10s infinite linear;
+.bulk-discounts li:first-child {
+    border: none;
+    justify-content: center;
+    padding-top: .8em;
 }
 
-@keyframes move {
-to {
-    transform: translatey(-50%);
+.bulk-discounts li:last-child {
+    border: none;
+    justify-content: center;
+    color: #04af49;
+    font-weight: 600;
 }
-}
-
-@keyframes move-down {
-    to {
-        transform: translatey(50%);
-    }
-    }
-
