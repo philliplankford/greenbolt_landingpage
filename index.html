@@ -4,94 +4,35 @@
         <title>Phillip Lankford</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body id="body">
         <header>
-            <!-- <div class="contact-banner">
-               <a href="tel:3606107172">call me: (360) 610-7172</a>
-                <a href="mailto:phillip@greenbolt.tech">email: phillip@greenbolt.tech</a>
-            </div>-->
             <div class="header-wrap">
                 <div class="company">
-                    <a href="index.html"><img id="logo" src="./img/logo.png"/></a>
+                    <img id="logo" src="./images/greenbolt_logo_minified.svg" href="index.html"/>
                     <h1>GREEN BOLT TECH</h1>
                 </div>
-                <nav class="full-menu">
-                    <a>SERVICES</a>
-                    <a>ABOUT</a>
-                    <a>TESTIMONIALS</a>
-                </nav>
-                <image id="menu_button" src="img/menu_icon.svg"/>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="#">Home</a></li>
+                        <li><a class="menu__item" href="#">About</a></li>
+                        <li><a class="menu__item" href="#">Team</a></li>
+                        <li><a class="menu__item" href="#">Contact</a></li>
+                        <li><a class="menu__item" href="#">Twitter</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
-        <main class="home-page">
-            <div class="front-wrap">
-                <div class="top-wrap">
-                    <h2>RESPONSIVE</h2>
-                    <h2>SECURE</h2>
-                    <h2>SUSTAINABLE</h2>
-                    <div class="home-buttons">
-                        <a href="services.html" class="filled-button">View Services</a>
-                        <a class="open-button">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="form-wrap">
-            <form action="https://api.web3forms.com/submit" method="POST">
-
-                <div class="entry-wrap">
-                    <h4>How can I help you?</h4>
-                    <!-- Replace with your Access Key -->
-                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                
-                    <!-- Form Inputs. Each input must have a name="" attribute -->
-                    <div class="input-wrap">
-                        <span class="label-wrap"><label>Name:</label><p class="required-text">required</p></span>
-                        <input type="text" name="name" required>
-                    </div>
-                    <div class="input-wrap">
-                        <span class="label-wrap"><label>Email:</label><p class="required-text">required</p></span>
-                        <input type="email" name="email" required>
-                    </div>
-                    <div class="input-wrap">
-                        <span class="label-wrap"><label>Phone:</label></span>
-                        <input type="text" name="Phone Number">
-                    </div>
-                    <div class="input-wrap">
-                        <span class="label-wrap"><label>Message:</label><p class="required-text">required</p></span>
-                        <textarea name="message" required></textarea>
-                    </div>
-                
-                    <!-- Honeypot Spam Protection -->
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                
-                    <!-- Custom Confirmation / Success Page -->
-                    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-                </div>
-            
-                <button type="submit"><img class="button-icon" src="./img/send-email.svg"/></button>
-            
-            </form>
-            </div>
-
-            <nav id="menu_overlay" class="hide">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="menu-item" href="index.html">HOME</a></li>
-                    <li class="nav-item"><a class="menu-item" href="services.html">SERVICES</a></li>
-                    <ul class="service-items">
-                        <li class="service-item"><a class="service-link">E-Waste Pickup</a></li>
-                        <li class="service-item"><a class="service-link">Data Destruction</a></li>
-                    </ul>
-                    <li class="nav-item"><a class="menu-item" href="about.html">ABOUT</a></li>
-                    <li class="nav-item"><a class="menu-item" href="testimonials.html">TESTIMONIALS</a></li>
-                </ul>
-            </nav>
-        </main>
+        <main></main>
     </body>
-    <script src="scripts.js"></script>
 </html>

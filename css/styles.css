@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Open Sans";
+}
+
+h1 {
+    margin: 0;
+    font-size: 1em;
+    color: #04af49;
+    font-family: "Montserrat";
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .25em .3em;
+}
+
+#logo {
+    width: 30px;
+    height: auto;
+    margin-right: .3em;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+}
+
+/* HAMBURGER STYLING */
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(-45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(-90deg);
+}
+
+/* MENU VISUAL */
+
+.hamburger-menu {
+  height: 100%;
+  width: 24px;
+  margin-bottom: 4px;
+}
+.menu__btn {
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  background-color: #04af49;
+  transition-duration: .15s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -9px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 9px;
+}
+
+/* OVERLAY */
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+.test {
+    width: 15px;
+    height: 42px;
+    background-color: purple;
+}
