@@ -1,17 +1,27 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat.woff2");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto.woff2");
+}
+:root {
+    --headerFont: "Montserrat", sans-serif;
+    --bodyFont: "Roboto", sans-serif;
+}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Roboto", "Open Sans";
 }
-
 h1 {
     margin: 0;
     font-size: 1em;
     color: #04af49;
-    font-family: "Montserrat";
+    font-family: var(--headerFont);
 }
-
 header {
     display: flex;
     justify-content: center;
@@ -20,7 +30,6 @@ header {
     top: 0;
     width: 100%;
 }
-
 .header-wrap {
     display: flex;
     justify-content: space-between;
@@ -28,48 +37,43 @@ header {
     width: 100%;
     padding: .25em .3em;
 }
-
 #logo {
     width: 30px;
     height: auto;
     margin-right: .3em;
 }
-
 .company {
     display: flex;
     align-items: center;
 }
-
 /* HAMBURGER STYLING */
-#menu__toggle {
+#menu-toggle {
   opacity: 0;
 }
-#menu__toggle:checked + .menu__btn > span {
+#menu-toggle:checked + .menu-btn > span {
   transform: rotate(-45deg);
 }
-#menu__toggle:checked + .menu__btn > span::before {
+#menu-toggle:checked + .menu-btn > span::before {
   top: 0;
   transform: rotate(0deg);
 }
-#menu__toggle:checked + .menu__btn > span::after {
+#menu-toggle:checked + .menu-btn > span::after {
   top: 0;
   transform: rotate(-90deg);
 }
-
 /* MENU VISUAL */
-
 .hamburger-menu {
   height: 100%;
   width: 24px;
   margin-bottom: 4px;
 }
-.menu__btn {
+.menu-btn {
   cursor: pointer;
   z-index: 1;
 }
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
   display: block;
   position: absolute;
   width: 22px;
@@ -77,17 +81,16 @@ header {
   background-color: #04af49;
   transition-duration: .15s;
 }
-.menu__btn > span::before {
+.menu-btn > span::before {
   content: '';
   top: -9px;
 }
-.menu__btn > span::after {
+.menu-btn > span::after {
   content: '';
   top: 9px;
 }
-
 /* OVERLAY */
-.menu__box {
+.menu-box {
   display: block;
   position: fixed;
   top: 0;
@@ -101,7 +104,7 @@ header {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
 }
-.menu__item {
+.menu-item {
   display: block;
   padding: 12px 24px;
   color: #333;
@@ -111,7 +114,7 @@ header {
   text-decoration: none;
   transition-duration: .25s;
 }
-.menu__item:hover {
+.menu-item:hover {
   background-color: #CFD8DC;
 }
 .test {
